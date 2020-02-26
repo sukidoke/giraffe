@@ -1,21 +1,13 @@
 extern crate csv;
 
-use gnuplot::{Figure, Caption, Color};
+use gnuplot::{Figure, Color};
 use std::env;
 use std::error::Error;
 use std::ffi::OsString;
-use std::fs::File;
 use std::process;
 
 use gnuplot::AxesCommon;
 
-extern crate nom;
-
-use nom::{
-    IResult, 
-    bytes::complete::{tag, take_while_m_n},
-    combinator::map_res,
-    sequence::tuple};
 
 mod giraffe;
 
