@@ -18,6 +18,18 @@ pub fn data() -> clap::ArgMatches<'static> {
              .short("y")
              .takes_value(true)
              .required(true))
+        .arg(Arg::with_name("title")
+             .long("title")
+             .takes_value(true)
+             .required(true))
+        .arg(Arg::with_name("x_label")
+             .long("x_label")
+             .takes_value(true)
+             .required(true))
+        .arg(Arg::with_name("y_label")
+             .long("y_label")
+             .takes_value(true)
+             .required(true))
         .get_matches();
 
     return matches;
